@@ -11,6 +11,8 @@
 		57B13CBB19DE80B400016369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CBA19DE80B400016369 /* ViewController.swift */; };
 		57B13CC019DE80B400016369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B13CBF19DE80B400016369 /* Images.xcassets */; };
 		57B13CCF19DE80B400016369 /* TaksiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CCE19DE80B400016369 /* TaksiTests.swift */; };
+		57B13CE119DE880800016369 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; };
+		57B13CE219DE880800016369 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +23,42 @@
 			remoteGlobalIDString = 57B13CB219DE80B400016369;
 			remoteInfo = Taksi;
 		};
+		57B13CDD19DE87A000016369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = Snappy;
+		};
+		57B13CDF19DE87A000016369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = SnappyTests;
+		};
+		57B13CE319DE880800016369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = Snappy;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		57B13CE519DE880800016369 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57B13CE219DE880800016369 /* Snappy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		57B13CB319DE80B400016369 /* Taksi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taksi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +69,7 @@
 		57B13CC819DE80B400016369 /* TaksiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaksiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B13CCD19DE80B400016369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B13CCE19DE80B400016369 /* TaksiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaksiTests.swift; sourceTree = "<group>"; };
+		57B13CD819DE87A000016369 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = Snappy/Snappy.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B13CE119DE880800016369 /* Snappy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +94,7 @@
 		57B13CAA19DE80B400016369 = {
 			isa = PBXGroup;
 			children = (
+				57B13CD819DE87A000016369 /* Snappy.xcodeproj */,
 				57B13CB519DE80B400016369 /* Taksi */,
 				57B13CCB19DE80B400016369 /* TaksiTests */,
 				57B13CB419DE80B400016369 /* Products */,
@@ -106,6 +146,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		57B13CD919DE87A000016369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57B13CDE19DE87A000016369 /* Snappy.framework */,
+				57B13CE019DE87A000016369 /* SnappyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,10 +165,12 @@
 				57B13CAF19DE80B400016369 /* Sources */,
 				57B13CB019DE80B400016369 /* Frameworks */,
 				57B13CB119DE80B400016369 /* Resources */,
+				57B13CE519DE880800016369 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				57B13CE419DE880800016369 /* PBXTargetDependency */,
 			);
 			name = Taksi;
 			productName = Taksi;
@@ -173,6 +224,12 @@
 			mainGroup = 57B13CAA19DE80B400016369;
 			productRefGroup = 57B13CB419DE80B400016369 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 57B13CD919DE87A000016369 /* Products */;
+					ProjectRef = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				57B13CB219DE80B400016369 /* Taksi */,
@@ -180,6 +237,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		57B13CDE19DE87A000016369 /* Snappy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Snappy.framework;
+			remoteRef = 57B13CDD19DE87A000016369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57B13CE019DE87A000016369 /* SnappyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SnappyTests.xctest;
+			remoteRef = 57B13CDF19DE87A000016369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		57B13CB119DE80B400016369 /* Resources */ = {
@@ -224,6 +298,11 @@
 			isa = PBXTargetDependency;
 			target = 57B13CB219DE80B400016369 /* Taksi */;
 			targetProxy = 57B13CC919DE80B400016369 /* PBXContainerItemProxy */;
+		};
+		57B13CE419DE880800016369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Snappy;
+			targetProxy = 57B13CE319DE880800016369 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

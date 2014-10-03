@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import MapKit
+import Snappy
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        var trackerView = TrackerView(frame: self.view.frame)
+        self.view.addSubview(trackerView)
+
+        trackerView.snp_makeConstraints { make in
+            make.edges.equalTo(self.view)
+            return
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

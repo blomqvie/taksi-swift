@@ -11,8 +11,12 @@
 		57B13CBB19DE80B400016369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CBA19DE80B400016369 /* ViewController.swift */; };
 		57B13CC019DE80B400016369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B13CBF19DE80B400016369 /* Images.xcassets */; };
 		57B13CCF19DE80B400016369 /* TaksiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CCE19DE80B400016369 /* TaksiTests.swift */; };
-		57B13CE119DE880800016369 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; };
-		57B13CE219DE880800016369 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57B13CE619DE88FA00016369 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; };
+		57B13CE719DE88FA00016369 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57B13CED19DE8C7B00016369 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CEC19DE8C7B00016369 /* CoreLocation.framework */; };
+		57B13CEF19DE8C8600016369 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CEE19DE8C8600016369 /* MapKit.framework */; };
+		57B13CF119DEAE8400016369 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CF019DEAE8400016369 /* TrackerView.swift */; };
+		57B13CF319DEBBAC00016369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CF219DEBBAC00016369 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
 			remoteInfo = SnappyTests;
 		};
-		57B13CE319DE880800016369 /* PBXContainerItemProxy */ = {
+		57B13CE819DE88FA00016369 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
 			proxyType = 1;
@@ -47,13 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		57B13CE519DE880800016369 /* Embed Frameworks */ = {
+		57B13CEA19DE88FA00016369 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				57B13CE219DE880800016369 /* Snappy.framework in Embed Frameworks */,
+				57B13CE719DE88FA00016369 /* Snappy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +74,10 @@
 		57B13CCD19DE80B400016369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B13CCE19DE80B400016369 /* TaksiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaksiTests.swift; sourceTree = "<group>"; };
 		57B13CD819DE87A000016369 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = Snappy/Snappy.xcodeproj; sourceTree = "<group>"; };
+		57B13CEC19DE8C7B00016369 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		57B13CEE19DE8C8600016369 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		57B13CF019DEAE8400016369 /* TrackerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
+		57B13CF219DEBBAC00016369 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B13CE119DE880800016369 /* Snappy.framework in Frameworks */,
+				57B13CF319DEBBAC00016369 /* UIKit.framework in Frameworks */,
+				57B13CEF19DE8C8600016369 /* MapKit.framework in Frameworks */,
+				57B13CED19DE8C7B00016369 /* CoreLocation.framework in Frameworks */,
+				57B13CE619DE88FA00016369 /* Snappy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +105,13 @@
 		57B13CAA19DE80B400016369 = {
 			isa = PBXGroup;
 			children = (
-				57B13CD819DE87A000016369 /* Snappy.xcodeproj */,
+				57B13CF219DEBBAC00016369 /* UIKit.framework */,
+				57B13CEE19DE8C8600016369 /* MapKit.framework */,
+				57B13CEC19DE8C7B00016369 /* CoreLocation.framework */,
 				57B13CB519DE80B400016369 /* Taksi */,
 				57B13CCB19DE80B400016369 /* TaksiTests */,
 				57B13CB419DE80B400016369 /* Products */,
+				57B13CD819DE87A000016369 /* Snappy.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +131,7 @@
 				57B13CBA19DE80B400016369 /* ViewController.swift */,
 				57B13CBF19DE80B400016369 /* Images.xcassets */,
 				57B13CB619DE80B400016369 /* Supporting Files */,
+				57B13CF019DEAE8400016369 /* TrackerView.swift */,
 			);
 			path = Taksi;
 			sourceTree = "<group>";
@@ -165,12 +180,12 @@
 				57B13CAF19DE80B400016369 /* Sources */,
 				57B13CB019DE80B400016369 /* Frameworks */,
 				57B13CB119DE80B400016369 /* Resources */,
-				57B13CE519DE880800016369 /* Embed Frameworks */,
+				57B13CEA19DE88FA00016369 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				57B13CE419DE880800016369 /* PBXTargetDependency */,
+				57B13CE919DE88FA00016369 /* PBXTargetDependency */,
 			);
 			name = Taksi;
 			productName = Taksi;
@@ -280,6 +295,7 @@
 			files = (
 				57B13CBB19DE80B400016369 /* ViewController.swift in Sources */,
 				57B13CB919DE80B400016369 /* AppDelegate.swift in Sources */,
+				57B13CF119DEAE8400016369 /* TrackerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,10 +315,10 @@
 			target = 57B13CB219DE80B400016369 /* Taksi */;
 			targetProxy = 57B13CC919DE80B400016369 /* PBXContainerItemProxy */;
 		};
-		57B13CE419DE880800016369 /* PBXTargetDependency */ = {
+		57B13CE919DE88FA00016369 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Snappy;
-			targetProxy = 57B13CE319DE880800016369 /* PBXContainerItemProxy */;
+			targetProxy = 57B13CE819DE88FA00016369 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

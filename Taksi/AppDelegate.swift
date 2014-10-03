@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var locationManager: CLLocationManager!
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        locationManager = CLLocationManager()
+        locationManager.requestWhenInUseAuthorization()
+
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         var viewController = ViewController()
         self.window!.rootViewController = ViewController()

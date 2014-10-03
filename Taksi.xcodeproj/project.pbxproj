@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		57B13CB919DE80B400016369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CB819DE80B400016369 /* AppDelegate.swift */; };
 		57B13CBB19DE80B400016369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CBA19DE80B400016369 /* ViewController.swift */; };
-		57B13CBE19DE80B400016369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B13CBC19DE80B400016369 /* Main.storyboard */; };
 		57B13CC019DE80B400016369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B13CBF19DE80B400016369 /* Images.xcassets */; };
-		57B13CC319DE80B400016369 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B13CC119DE80B400016369 /* LaunchScreen.xib */; };
 		57B13CCF19DE80B400016369 /* TaksiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CCE19DE80B400016369 /* TaksiTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +28,7 @@
 		57B13CB719DE80B400016369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B13CB819DE80B400016369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57B13CBA19DE80B400016369 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		57B13CBD19DE80B400016369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57B13CBF19DE80B400016369 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		57B13CC219DE80B400016369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		57B13CC819DE80B400016369 /* TaksiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaksiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B13CCD19DE80B400016369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B13CCE19DE80B400016369 /* TaksiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaksiTests.swift; sourceTree = "<group>"; };
@@ -79,9 +75,7 @@
 			children = (
 				57B13CB819DE80B400016369 /* AppDelegate.swift */,
 				57B13CBA19DE80B400016369 /* ViewController.swift */,
-				57B13CBC19DE80B400016369 /* Main.storyboard */,
 				57B13CBF19DE80B400016369 /* Images.xcassets */,
-				57B13CC119DE80B400016369 /* LaunchScreen.xib */,
 				57B13CB619DE80B400016369 /* Supporting Files */,
 			);
 			path = Taksi;
@@ -192,8 +186,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B13CBE19DE80B400016369 /* Main.storyboard in Resources */,
-				57B13CC319DE80B400016369 /* LaunchScreen.xib in Resources */,
 				57B13CC019DE80B400016369 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,25 +226,6 @@
 			targetProxy = 57B13CC919DE80B400016369 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		57B13CBC19DE80B400016369 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57B13CBD19DE80B400016369 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		57B13CC119DE80B400016369 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57B13CC219DE80B400016369 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		57B13CD019DE80B400016369 /* Debug */ = {

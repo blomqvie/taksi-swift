@@ -17,6 +17,7 @@
 		57B13CEF19DE8C8600016369 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CEE19DE8C8600016369 /* MapKit.framework */; };
 		57B13CF119DEAE8400016369 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CF019DEAE8400016369 /* TrackerView.swift */; };
 		57B13CF319DEBBAC00016369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CF219DEBBAC00016369 /* UIKit.framework */; };
+		57B13CF519DEC90C00016369 /* AddressResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CF419DEC90C00016369 /* AddressResolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		57B13CEE19DE8C8600016369 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		57B13CF019DEAE8400016369 /* TrackerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
 		57B13CF219DEBBAC00016369 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		57B13CF419DEC90C00016369 /* AddressResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressResolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				57B13CBF19DE80B400016369 /* Images.xcassets */,
 				57B13CB619DE80B400016369 /* Supporting Files */,
 				57B13CF019DEAE8400016369 /* TrackerView.swift */,
+				57B13CF419DEC90C00016369 /* AddressResolver.swift */,
 			);
 			path = Taksi;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B13CBB19DE80B400016369 /* ViewController.swift in Sources */,
+				57B13CF519DEC90C00016369 /* AddressResolver.swift in Sources */,
 				57B13CB919DE80B400016369 /* AppDelegate.swift in Sources */,
 				57B13CF119DEAE8400016369 /* TrackerView.swift in Sources */,
 			);

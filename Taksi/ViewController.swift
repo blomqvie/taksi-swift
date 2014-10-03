@@ -13,8 +13,12 @@ import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate {
     
+    var addressResolver : AddressResolver!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addressResolver = AddressResolver()
         
         var trackerView = TrackerView(frame: self.view.frame)
         self.view.addSubview(trackerView)
@@ -29,7 +33,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
 
     func mapView(mapView: MKMapView!, didUpdateUserLocation userLocation: MKUserLocation!) {
-        println(userLocation)
+        println(userLocation.location)
+        addressResolver.resolveAddress(userLocation.location, callback: {(address: Address) in
+            println(address.zipcode)
+        })
     }
     
     override func didReceiveMemoryWarning() {

@@ -34,8 +34,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     func mapView(mapView: MKMapView!, didUpdateUserLocation userLocation: MKUserLocation!) {
         println(userLocation.location)
-        addressResolver.resolveAddress(userLocation.location, callback: {(address: Address) in
-            println(address.zipcode)
+        addressResolver.resolveAddress(userLocation.location, callback: {(address: Address?) in
+            println(address?.fullAddress)
         })
     }
     

@@ -11,23 +11,36 @@ import CoreLocation
 
 class AddressResolver {
     
-    let noAddress = Address(fullAddress: "",municipality: "",zipcode: "")
     let geocoder = CLGeocoder()
     
-    func resolveAddress(location: CLLocation, callback: (Address) -> Void) {
+    func resolveAddress(location: CLLocation, callback: (Address?) -> Void) {
         geocoder.reverseGeocodeLocation(location, completionHandler: {(placemarks, error) in
-            let asObj: AnyObject? = placemarks?.last
-            if let mark = asObj as? CLPlacemark {
-                callback(Address(fullAddress: self.createFullAddress(mark), municipality: "", zipcode: mark.postalCode))
+            if let mark = placemarks?.last as CLPlacemark? {
+                let municipality = self.parseMunicipality(mark)
+                let fullAddress = self.createFullAddress(location, placemark: mark, municipality: municipality)
+                callback(Address(fullAddress: fullAddress, municipality: municipality, zipcode: mark.postalCode))
             }
-            else { callback(self.noAddress)}
+            else { callback(nil)}
         })
     }
     
-    private func createFullAddress(placemark: CLPlacemark) -> String {
-        return "foo"
+    private func createFullAddress(location: CLLocation, placemark: CLPlacemark, municipality: String) -> String {
+        let subThoroughfare = (placemark.subThoroughfare? != nil) ? " \(placemark.subThoroughfare!)" : ""
+        return String(format: "\(placemark.thoroughfare!)\(subThoroughfare)\n\(placemark.postalCode) \(municipality) (+/-) %d m", location.horizontalAccuracy)
+    }
+
+    private func parseMunicipality(placemark: CLPlacemark) -> String {
+        let lines = placemark.addressDictionary["FormattedAddressLines"] as NSArray?
+        if lines?.count > 2 {
+            let line = lines![lines!.count - 2] as NSString
+            if line.length > 6 {
+                return line.substringFromIndex(6)
+            }
+        }
+        return placemark.locality
     }
 }
+
 struct Address {
     let fullAddress: String
     let municipality: String

@@ -45,10 +45,4 @@ struct Address {
     let fullAddress: String
     let municipality: String
     let zipcode: String
-    
-    init(fullAddress:String, municipality: String, zipcode: String){
-        self.fullAddress = fullAddress
-        self.municipality = municipality
-        self.zipcode = zipcode
-    }
 }

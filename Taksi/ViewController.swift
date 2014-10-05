@@ -13,12 +13,15 @@ import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate {
     
-    var addressResolver : AddressResolver!
+    var addressResolver: AddressResolver!
+    var taxiService: TaxiService!
+    var lastMunicipality = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addressResolver = AddressResolver()
+        taxiService = TaxiService()
         
         var trackerView = TrackerView(frame: self.view.frame)
         self.view.addSubview(trackerView)
@@ -34,8 +37,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     func mapView(mapView: MKMapView!, didUpdateUserLocation userLocation: MKUserLocation!) {
         println(userLocation.location)
-        addressResolver.resolveAddress(userLocation.location, callback: {(address: Address?) in
-            println(address?.fullAddress)
+        addressResolver.resolveAddress(userLocation.location, {(address: Address?) in
+            if (address != nil) && address!.municipality != self.lastMunicipality  {
+                self.taxiService.fetchTaxiData(address!.zipcode, municipality: address!.municipality, { (op: Operator?) in
+                    self.lastMunicipality = address!.municipality
+                    // TODO show operator info
+                    return
+                })
+            }
         })
     }
     

@@ -14,7 +14,7 @@ import Snappy
 class TrackerView: UIView {
 
     let mapView = MKMapView()
-    let infoView = UIView()
+    let infoView = UITextField()
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -37,7 +37,7 @@ class TrackerView: UIView {
             return
         }
 
-        infoView.backgroundColor = UIColor.greenColor()
+        infoView.text = "Foobar"
         infoView.snp_makeConstraints { make in
             make.top.equalTo(self.mapView.snp_bottom).with.insets(padding)
             make.right.left.bottom.equalTo(self).with.insets(padding)

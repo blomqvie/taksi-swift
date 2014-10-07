@@ -22,6 +22,7 @@
 		57B13CF119DEAE8400016369 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CF019DEAE8400016369 /* TrackerView.swift */; };
 		57B13CF319DEBBAC00016369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CF219DEBBAC00016369 /* UIKit.framework */; };
 		57B13CF519DEC90C00016369 /* AddressResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CF419DEC90C00016369 /* AddressResolver.swift */; };
+		CA49AE5D3810B3A7B51DB7C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A34722182979C953659B01 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E1424377A6986239E18D93C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5710126919E1C0B400B69295 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		5710127519E1C2E700B69295 /* TaxiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiService.swift; sourceTree = "<group>"; };
 		5710127719E1CA7700B69295 /* helsinki.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = helsinki.gpx; path = ../../taksi/Taksi/Resources/helsinki.gpx; sourceTree = "<group>"; };
@@ -112,6 +114,9 @@
 		57B13CF019DEAE8400016369 /* TrackerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
 		57B13CF219DEBBAC00016369 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57B13CF419DEC90C00016369 /* AddressResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressResolver.swift; sourceTree = "<group>"; };
+		57CC8BFA19E471A900484570 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		AF8D1DB1417E8FF840903A69 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A34722182979C953659B01 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,7 @@
 				57B13CEF19DE8C8600016369 /* MapKit.framework in Frameworks */,
 				57B13CED19DE8C7B00016369 /* CoreLocation.framework in Frameworks */,
 				57B13CE619DE88FA00016369 /* Snappy.framework in Frameworks */,
+				CA49AE5D3810B3A7B51DB7C9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +143,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B4DC42BF791EAA32F87FA58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF8D1DB1417E8FF840903A69 /* Pods.debug.xcconfig */,
+				1E1424377A6986239E18D93C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		548B7503A9FBF52F55D05EA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8A34722182979C953659B01 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5710126A19E1C0B400B69295 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +181,8 @@
 				57B13CB419DE80B400016369 /* Products */,
 				5710126919E1C0B400B69295 /* Alamofire.xcodeproj */,
 				57B13CD819DE87A000016369 /* Snappy.xcodeproj */,
+				2B4DC42BF791EAA32F87FA58 /* Pods */,
+				548B7503A9FBF52F55D05EA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +205,7 @@
 				57B13CB819DE80B400016369 /* AppDelegate.swift */,
 				57B13CBF19DE80B400016369 /* Images.xcassets */,
 				57B13CB619DE80B400016369 /* Supporting Files */,
+				57CC8BFA19E471A900484570 /* BridgingHeader.h */,
 			);
 			path = Taksi;
 			sourceTree = "<group>";
@@ -257,11 +283,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57B13CD219DE80B400016369 /* Build configuration list for PBXNativeTarget "Taksi" */;
 			buildPhases = (
+				7678D386C7DC64898973B4C8 /* Check Pods Manifest.lock */,
 				57B13CAF19DE80B400016369 /* Sources */,
 				57B13CB019DE80B400016369 /* Frameworks */,
 				57B13CB119DE80B400016369 /* Resources */,
 				57B13CEA19DE88FA00016369 /* Embed Frameworks */,
 				5710127319E1C10500B69295 /* Copy Files (1 item) */,
+				FBD9348BD84606793322C40D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -388,6 +416,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7678D386C7DC64898973B4C8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD9348BD84606793322C40D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		57B13CAF19DE80B400016369 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -504,21 +565,25 @@
 		};
 		57B13CD319DE80B400016369 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8D1DB1417E8FF840903A69 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Taksi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Taksi/BridgingHeader.h;
 			};
 			name = Debug;
 		};
 		57B13CD419DE80B400016369 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1424377A6986239E18D93C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Taksi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Taksi/BridgingHeader.h;
 			};
 			name = Release;
 		};

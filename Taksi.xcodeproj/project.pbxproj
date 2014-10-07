@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		5710127219E1C0FF00B69295 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5710126F19E1C0B400B69295 /* Alamofire.framework */; };
 		5710127419E1C12000B69295 /* Alamofire.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 5710126F19E1C0B400B69295 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5710127619E1C2E700B69295 /* TaxiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710127519E1C2E700B69295 /* TaxiService.swift */; };
-		5710127819E1CA7700B69295 /* helsinki.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5710127719E1CA7700B69295 /* helsinki.gpx */; };
 		57B13CB919DE80B400016369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CB819DE80B400016369 /* AppDelegate.swift */; };
-		57B13CBB19DE80B400016369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CBA19DE80B400016369 /* ViewController.swift */; };
 		57B13CC019DE80B400016369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B13CBF19DE80B400016369 /* Images.xcassets */; };
 		57B13CCF19DE80B400016369 /* TaksiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CCE19DE80B400016369 /* TaksiTests.swift */; };
 		57B13CE619DE88FA00016369 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; };
 		57B13CE719DE88FA00016369 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57B13CED19DE8C7B00016369 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CEC19DE8C7B00016369 /* CoreLocation.framework */; };
 		57B13CEF19DE8C8600016369 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CEE19DE8C8600016369 /* MapKit.framework */; };
-		57B13CF119DEAE8400016369 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CF019DEAE8400016369 /* TrackerView.swift */; };
 		57B13CF319DEBBAC00016369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CF219DEBBAC00016369 /* UIKit.framework */; };
-		57B13CF519DEC90C00016369 /* AddressResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CF419DEC90C00016369 /* AddressResolver.swift */; };
+		57CC8C0A19E47EA000484570 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8C0819E47EA000484570 /* ViewController.swift */; };
+		57CC8C0B19E47EA000484570 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8C0919E47EA000484570 /* TrackerView.swift */; };
+		57CC8C0D19E47EB900484570 /* TaxiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8C0C19E47EB900484570 /* TaxiService.swift */; };
+		57CC8C0F19E47EC300484570 /* AddressResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8C0E19E47EC300484570 /* AddressResolver.swift */; };
+		57CC8C1219E47ED400484570 /* helsinki.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 57CC8C1119E47ED400484570 /* helsinki.gpx */; };
 		CA49AE5D3810B3A7B51DB7C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A34722182979C953659B01 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -98,12 +98,9 @@
 /* Begin PBXFileReference section */
 		1E1424377A6986239E18D93C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5710126919E1C0B400B69295 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		5710127519E1C2E700B69295 /* TaxiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiService.swift; sourceTree = "<group>"; };
-		5710127719E1CA7700B69295 /* helsinki.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = helsinki.gpx; path = ../../taksi/Taksi/Resources/helsinki.gpx; sourceTree = "<group>"; };
 		57B13CB319DE80B400016369 /* Taksi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taksi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B13CB719DE80B400016369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B13CB819DE80B400016369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57B13CBA19DE80B400016369 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57B13CBF19DE80B400016369 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		57B13CC819DE80B400016369 /* TaksiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaksiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B13CCD19DE80B400016369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,10 +108,13 @@
 		57B13CD819DE87A000016369 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = Snappy/Snappy.xcodeproj; sourceTree = "<group>"; };
 		57B13CEC19DE8C7B00016369 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		57B13CEE19DE8C8600016369 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		57B13CF019DEAE8400016369 /* TrackerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
 		57B13CF219DEBBAC00016369 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		57B13CF419DEC90C00016369 /* AddressResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressResolver.swift; sourceTree = "<group>"; };
 		57CC8BFA19E471A900484570 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		57CC8C0819E47EA000484570 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = View/ViewController.swift; sourceTree = "<group>"; };
+		57CC8C0919E47EA000484570 /* TrackerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackerView.swift; path = View/TrackerView.swift; sourceTree = "<group>"; };
+		57CC8C0C19E47EB900484570 /* TaxiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaxiService.swift; path = Model/TaxiService.swift; sourceTree = "<group>"; };
+		57CC8C0E19E47EC300484570 /* AddressResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressResolver.swift; path = Utils/AddressResolver.swift; sourceTree = "<group>"; };
+		57CC8C1119E47ED400484570 /* helsinki.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = helsinki.gpx; sourceTree = "<group>"; };
 		AF8D1DB1417E8FF840903A69 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B8A34722182979C953659B01 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,7 +172,6 @@
 		57B13CAA19DE80B400016369 = {
 			isa = PBXGroup;
 			children = (
-				5710127719E1CA7700B69295 /* helsinki.gpx */,
 				57B13CF219DEBBAC00016369 /* UIKit.framework */,
 				57B13CEE19DE8C8600016369 /* MapKit.framework */,
 				57B13CEC19DE8C7B00016369 /* CoreLocation.framework */,
@@ -213,6 +212,7 @@
 		57B13CB619DE80B400016369 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				57CC8C1019E47ED400484570 /* Resources */,
 				57B13CB719DE80B400016369 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -254,7 +254,7 @@
 		57CC8BCA19E457A500484570 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				57B13CF419DEC90C00016369 /* AddressResolver.swift */,
+				57CC8C0E19E47EC300484570 /* AddressResolver.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 		57CC8BCB19E457AE00484570 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5710127519E1C2E700B69295 /* TaxiService.swift */,
+				57CC8C0C19E47EB900484570 /* TaxiService.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -270,10 +270,18 @@
 		57CC8BCC19E457C400484570 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				57B13CF019DEAE8400016369 /* TrackerView.swift */,
-				57B13CBA19DE80B400016369 /* ViewController.swift */,
+				57CC8C0819E47EA000484570 /* ViewController.swift */,
+				57CC8C0919E47EA000484570 /* TrackerView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		57CC8C1019E47ED400484570 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57CC8C1119E47ED400484570 /* helsinki.gpx */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,7 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5710127819E1CA7700B69295 /* helsinki.gpx in Resources */,
+				57CC8C1219E47ED400484570 /* helsinki.gpx in Resources */,
 				57B13CC019DE80B400016369 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,11 +462,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5710127619E1C2E700B69295 /* TaxiService.swift in Sources */,
-				57B13CBB19DE80B400016369 /* ViewController.swift in Sources */,
-				57B13CF519DEC90C00016369 /* AddressResolver.swift in Sources */,
+				57CC8C0A19E47EA000484570 /* ViewController.swift in Sources */,
 				57B13CB919DE80B400016369 /* AppDelegate.swift in Sources */,
-				57B13CF119DEAE8400016369 /* TrackerView.swift in Sources */,
+				57CC8C0B19E47EA000484570 /* TrackerView.swift in Sources */,
+				57CC8C0D19E47EB900484570 /* TaxiService.swift in Sources */,
+				57CC8C0F19E47EC300484570 /* AddressResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

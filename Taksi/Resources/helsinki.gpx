@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1"
+     creator="http://pf-prg.hu/trafo-4-wgs-kml-f.php"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+>
+  <metadata>
+    <time>2013-01-29T09:38:26Z</time>
+    <bounds maxlat="60.170833" maxlon="24.9375" minlat="60.170833" minlon="24.9375"/>
+  </metadata>
+  <wpt lat="60.1708330000" lon="24.9375000000">
+    <ele> 0.00</ele>
+    <name>Helsinki</name>
+    <sym>Circle, Red</sym>
+  </wpt>
+</gpx>

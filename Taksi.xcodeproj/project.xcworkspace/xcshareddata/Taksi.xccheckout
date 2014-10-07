@@ -24,11 +24,11 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1894AEDAD595CCC675397F34C30460759F8A633A</key>
-		<string>../../../../taksi</string>
+		<string>../../../taksi</string>
 		<key>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</key>
-		<string>../..Snappy/</string>
+		<string>../..Snappy</string>
 		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
-		<string>../..Alamofire/</string>
+		<string>../..Alamofire</string>
 		<key>BA70A3BF9BE1D4B75E2137B01A37FD46C5DE37D3</key>
 		<string>../..</string>
 	</dict>
@@ -44,22 +44,6 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Alamofire</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Snappy</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>1894AEDAD595CCC675397F34C30460759F8A633A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>taksi</string>
@@ -71,6 +55,22 @@
 			<string>BA70A3BF9BE1D4B75E2137B01A37FD46C5DE37D3</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Taksi</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TaksiAlamofire</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TaksiSnappy</string>
 		</dict>
 	</array>
 </dict>

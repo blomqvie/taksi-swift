@@ -173,13 +173,13 @@
 		57B13CB519DE80B400016369 /* Taksi */ = {
 			isa = PBXGroup;
 			children = (
+				57CC8BCC19E457C400484570 /* View */,
+				57CC8BCB19E457AE00484570 /* Model */,
+				57CC8BCA19E457A500484570 /* Util */,
+				57CC8BC619E4579700484570 /* ViewModel */,
 				57B13CB819DE80B400016369 /* AppDelegate.swift */,
-				57B13CBA19DE80B400016369 /* ViewController.swift */,
 				57B13CBF19DE80B400016369 /* Images.xcassets */,
 				57B13CB619DE80B400016369 /* Supporting Files */,
-				57B13CF019DEAE8400016369 /* TrackerView.swift */,
-				57B13CF419DEC90C00016369 /* AddressResolver.swift */,
-				5710127519E1C2E700B69295 /* TaxiService.swift */,
 			);
 			path = Taksi;
 			sourceTree = "<group>";
@@ -216,6 +216,38 @@
 				57B13CE019DE87A000016369 /* SnappyTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		57CC8BC619E4579700484570 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		57CC8BCA19E457A500484570 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				57B13CF419DEC90C00016369 /* AddressResolver.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		57CC8BCB19E457AE00484570 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5710127519E1C2E700B69295 /* TaxiService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		57CC8BCC19E457C400484570 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57B13CF019DEAE8400016369 /* TrackerView.swift */,
+				57B13CBA19DE80B400016369 /* ViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

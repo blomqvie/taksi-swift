@@ -1,665 +1,1418 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		5710127219E1C0FF00B69295 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5710126F19E1C0B400B69295 /* Alamofire.framework */; };
-		5710127419E1C12000B69295 /* Alamofire.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 5710126F19E1C0B400B69295 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		57B13CB919DE80B400016369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CB819DE80B400016369 /* AppDelegate.swift */; };
-		57B13CC019DE80B400016369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B13CBF19DE80B400016369 /* Images.xcassets */; };
-		57B13CCF19DE80B400016369 /* TaksiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B13CCE19DE80B400016369 /* TaksiTests.swift */; };
-		57B13CE619DE88FA00016369 /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; };
-		57B13CE719DE88FA00016369 /* Snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CDE19DE87A000016369 /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		57B13CED19DE8C7B00016369 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CEC19DE8C7B00016369 /* CoreLocation.framework */; };
-		57B13CEF19DE8C8600016369 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CEE19DE8C8600016369 /* MapKit.framework */; };
-		57B13CF319DEBBAC00016369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B13CF219DEBBAC00016369 /* UIKit.framework */; };
-		57CC8C0A19E47EA000484570 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8C0819E47EA000484570 /* ViewController.swift */; };
-		57CC8C0B19E47EA000484570 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8C0919E47EA000484570 /* TrackerView.swift */; };
-		57CC8C0D19E47EB900484570 /* TaxiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8C0C19E47EB900484570 /* TaxiService.swift */; };
-		57CC8C0F19E47EC300484570 /* AddressResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8C0E19E47EC300484570 /* AddressResolver.swift */; };
-		57CC8C1219E47ED400484570 /* helsinki.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 57CC8C1119E47ED400484570 /* helsinki.gpx */; };
-		CA49AE5D3810B3A7B51DB7C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A34722182979C953659B01 /* libPods.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5710126E19E1C0B400B69295 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5710126919E1C0B400B69295 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = Alamofire;
-		};
-		5710127019E1C0B400B69295 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5710126919E1C0B400B69295 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = AlamofireTests;
-		};
-		57B13CC919DE80B400016369 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57B13CAB19DE80B400016369 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 57B13CB219DE80B400016369;
-			remoteInfo = Taksi;
-		};
-		57B13CDD19DE87A000016369 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
-			remoteInfo = Snappy;
-		};
-		57B13CDF19DE87A000016369 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
-			remoteInfo = SnappyTests;
-		};
-		57B13CE819DE88FA00016369 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
-			remoteInfo = Snappy;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5710127319E1C10500B69295 /* Copy Files (1 item) */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5710127419E1C12000B69295 /* Alamofire.framework in Copy Files (1 item) */,
-			);
-			name = "Copy Files (1 item)";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57B13CEA19DE88FA00016369 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				57B13CE719DE88FA00016369 /* Snappy.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		1E1424377A6986239E18D93C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		5710126919E1C0B400B69295 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		57B13CB319DE80B400016369 /* Taksi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taksi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		57B13CB719DE80B400016369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57B13CB819DE80B400016369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57B13CBF19DE80B400016369 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		57B13CC819DE80B400016369 /* TaksiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaksiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57B13CCD19DE80B400016369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57B13CCE19DE80B400016369 /* TaksiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaksiTests.swift; sourceTree = "<group>"; };
-		57B13CD819DE87A000016369 /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = Snappy/Snappy.xcodeproj; sourceTree = "<group>"; };
-		57B13CEC19DE8C7B00016369 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		57B13CEE19DE8C8600016369 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		57B13CF219DEBBAC00016369 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		57CC8BFA19E471A900484570 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		57CC8C0819E47EA000484570 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = View/ViewController.swift; sourceTree = "<group>"; };
-		57CC8C0919E47EA000484570 /* TrackerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackerView.swift; path = View/TrackerView.swift; sourceTree = "<group>"; };
-		57CC8C0C19E47EB900484570 /* TaxiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaxiService.swift; path = Model/TaxiService.swift; sourceTree = "<group>"; };
-		57CC8C0E19E47EC300484570 /* AddressResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressResolver.swift; path = Utils/AddressResolver.swift; sourceTree = "<group>"; };
-		57CC8C1119E47ED400484570 /* helsinki.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = helsinki.gpx; sourceTree = "<group>"; };
-		AF8D1DB1417E8FF840903A69 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		B8A34722182979C953659B01 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		57B13CB019DE80B400016369 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5710127219E1C0FF00B69295 /* Alamofire.framework in Frameworks */,
-				57B13CF319DEBBAC00016369 /* UIKit.framework in Frameworks */,
-				57B13CEF19DE8C8600016369 /* MapKit.framework in Frameworks */,
-				57B13CED19DE8C7B00016369 /* CoreLocation.framework in Frameworks */,
-				57B13CE619DE88FA00016369 /* Snappy.framework in Frameworks */,
-				CA49AE5D3810B3A7B51DB7C9 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57B13CC519DE80B400016369 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		2B4DC42BF791EAA32F87FA58 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AF8D1DB1417E8FF840903A69 /* Pods.debug.xcconfig */,
-				1E1424377A6986239E18D93C /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		548B7503A9FBF52F55D05EA5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B8A34722182979C953659B01 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5710126A19E1C0B400B69295 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5710126F19E1C0B400B69295 /* Alamofire.framework */,
-				5710127119E1C0B400B69295 /* AlamofireTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		57B13CAA19DE80B400016369 = {
-			isa = PBXGroup;
-			children = (
-				57B13CF219DEBBAC00016369 /* UIKit.framework */,
-				57B13CEE19DE8C8600016369 /* MapKit.framework */,
-				57B13CEC19DE8C7B00016369 /* CoreLocation.framework */,
-				57B13CB519DE80B400016369 /* Taksi */,
-				57B13CCB19DE80B400016369 /* TaksiTests */,
-				57B13CB419DE80B400016369 /* Products */,
-				5710126919E1C0B400B69295 /* Alamofire.xcodeproj */,
-				57B13CD819DE87A000016369 /* Snappy.xcodeproj */,
-				2B4DC42BF791EAA32F87FA58 /* Pods */,
-				548B7503A9FBF52F55D05EA5 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		57B13CB419DE80B400016369 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				57B13CB319DE80B400016369 /* Taksi.app */,
-				57B13CC819DE80B400016369 /* TaksiTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		57B13CB519DE80B400016369 /* Taksi */ = {
-			isa = PBXGroup;
-			children = (
-				57CC8BCC19E457C400484570 /* View */,
-				57CC8BCB19E457AE00484570 /* Model */,
-				57CC8BCA19E457A500484570 /* Util */,
-				57CC8BC619E4579700484570 /* ViewModel */,
-				57B13CB819DE80B400016369 /* AppDelegate.swift */,
-				57B13CBF19DE80B400016369 /* Images.xcassets */,
-				57B13CB619DE80B400016369 /* Supporting Files */,
-				57CC8BFA19E471A900484570 /* BridgingHeader.h */,
-			);
-			path = Taksi;
-			sourceTree = "<group>";
-		};
-		57B13CB619DE80B400016369 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				57CC8C1019E47ED400484570 /* Resources */,
-				57B13CB719DE80B400016369 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		57B13CCB19DE80B400016369 /* TaksiTests */ = {
-			isa = PBXGroup;
-			children = (
-				57B13CCE19DE80B400016369 /* TaksiTests.swift */,
-				57B13CCC19DE80B400016369 /* Supporting Files */,
-			);
-			path = TaksiTests;
-			sourceTree = "<group>";
-		};
-		57B13CCC19DE80B400016369 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				57B13CCD19DE80B400016369 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		57B13CD919DE87A000016369 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				57B13CDE19DE87A000016369 /* Snappy.framework */,
-				57B13CE019DE87A000016369 /* SnappyTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		57CC8BC619E4579700484570 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewModel;
-			sourceTree = "<group>";
-		};
-		57CC8BCA19E457A500484570 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				57CC8C0E19E47EC300484570 /* AddressResolver.swift */,
-			);
-			name = Util;
-			sourceTree = "<group>";
-		};
-		57CC8BCB19E457AE00484570 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				57CC8C0C19E47EB900484570 /* TaxiService.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		57CC8BCC19E457C400484570 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				57CC8C0819E47EA000484570 /* ViewController.swift */,
-				57CC8C0919E47EA000484570 /* TrackerView.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		57CC8C1019E47ED400484570 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				57CC8C1119E47ED400484570 /* helsinki.gpx */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		57B13CB219DE80B400016369 /* Taksi */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57B13CD219DE80B400016369 /* Build configuration list for PBXNativeTarget "Taksi" */;
-			buildPhases = (
-				7678D386C7DC64898973B4C8 /* Check Pods Manifest.lock */,
-				57B13CAF19DE80B400016369 /* Sources */,
-				57B13CB019DE80B400016369 /* Frameworks */,
-				57B13CB119DE80B400016369 /* Resources */,
-				57B13CEA19DE88FA00016369 /* Embed Frameworks */,
-				5710127319E1C10500B69295 /* Copy Files (1 item) */,
-				FBD9348BD84606793322C40D /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				57B13CE919DE88FA00016369 /* PBXTargetDependency */,
-			);
-			name = Taksi;
-			productName = Taksi;
-			productReference = 57B13CB319DE80B400016369 /* Taksi.app */;
-			productType = "com.apple.product-type.application";
-		};
-		57B13CC719DE80B400016369 /* TaksiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 57B13CD519DE80B400016369 /* Build configuration list for PBXNativeTarget "TaksiTests" */;
-			buildPhases = (
-				57B13CC419DE80B400016369 /* Sources */,
-				57B13CC519DE80B400016369 /* Frameworks */,
-				57B13CC619DE80B400016369 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				57B13CCA19DE80B400016369 /* PBXTargetDependency */,
-			);
-			name = TaksiTests;
-			productName = TaksiTests;
-			productReference = 57B13CC819DE80B400016369 /* TaksiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		57B13CAB19DE80B400016369 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = Reaktor;
-				TargetAttributes = {
-					57B13CB219DE80B400016369 = {
-						CreatedOnToolsVersion = 6.0.1;
-					};
-					57B13CC719DE80B400016369 = {
-						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = 57B13CB219DE80B400016369;
-					};
-				};
-			};
-			buildConfigurationList = 57B13CAE19DE80B400016369 /* Build configuration list for PBXProject "Taksi" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 57B13CAA19DE80B400016369;
-			productRefGroup = 57B13CB419DE80B400016369 /* Products */;
-			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 5710126A19E1C0B400B69295 /* Products */;
-					ProjectRef = 5710126919E1C0B400B69295 /* Alamofire.xcodeproj */;
-				},
-				{
-					ProductGroup = 57B13CD919DE87A000016369 /* Products */;
-					ProjectRef = 57B13CD819DE87A000016369 /* Snappy.xcodeproj */;
-				},
-			);
-			projectRoot = "";
-			targets = (
-				57B13CB219DE80B400016369 /* Taksi */,
-				57B13CC719DE80B400016369 /* TaksiTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		5710126F19E1C0B400B69295 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 5710126E19E1C0B400B69295 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		5710127119E1C0B400B69295 /* AlamofireTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AlamofireTests.xctest;
-			remoteRef = 5710127019E1C0B400B69295 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		57B13CDE19DE87A000016369 /* Snappy.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Snappy.framework;
-			remoteRef = 57B13CDD19DE87A000016369 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		57B13CE019DE87A000016369 /* SnappyTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SnappyTests.xctest;
-			remoteRef = 57B13CDF19DE87A000016369 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
-/* Begin PBXResourcesBuildPhase section */
-		57B13CB119DE80B400016369 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57CC8C1219E47ED400484570 /* helsinki.gpx in Resources */,
-				57B13CC019DE80B400016369 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57B13CC619DE80B400016369 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7678D386C7DC64898973B4C8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FBD9348BD84606793322C40D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		57B13CAF19DE80B400016369 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57CC8C0A19E47EA000484570 /* ViewController.swift in Sources */,
-				57B13CB919DE80B400016369 /* AppDelegate.swift in Sources */,
-				57CC8C0B19E47EA000484570 /* TrackerView.swift in Sources */,
-				57CC8C0D19E47EB900484570 /* TaxiService.swift in Sources */,
-				57CC8C0F19E47EC300484570 /* AddressResolver.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57B13CC419DE80B400016369 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				57B13CCF19DE80B400016369 /* TaksiTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		57B13CCA19DE80B400016369 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 57B13CB219DE80B400016369 /* Taksi */;
-			targetProxy = 57B13CC919DE80B400016369 /* PBXContainerItemProxy */;
-		};
-		57B13CE919DE88FA00016369 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Snappy;
-			targetProxy = 57B13CE819DE88FA00016369 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		57B13CD019DE80B400016369 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		57B13CD119DE80B400016369 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		57B13CD319DE80B400016369 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF8D1DB1417E8FF840903A69 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Taksi/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Taksi/BridgingHeader.h;
-			};
-			name = Debug;
-		};
-		57B13CD419DE80B400016369 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E1424377A6986239E18D93C /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Taksi/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Taksi/BridgingHeader.h;
-			};
-			name = Release;
-		};
-		57B13CD619DE80B400016369 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TaksiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taksi.app/Taksi";
-			};
-			name = Debug;
-		};
-		57B13CD719DE80B400016369 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TaksiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taksi.app/Taksi";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		57B13CAE19DE80B400016369 /* Build configuration list for PBXProject "Taksi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57B13CD019DE80B400016369 /* Debug */,
-				57B13CD119DE80B400016369 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		57B13CD219DE80B400016369 /* Build configuration list for PBXNativeTarget "Taksi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57B13CD319DE80B400016369 /* Debug */,
-				57B13CD419DE80B400016369 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		57B13CD519DE80B400016369 /* Build configuration list for PBXNativeTarget "TaksiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57B13CD619DE80B400016369 /* Debug */,
-				57B13CD719DE80B400016369 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 57B13CAB19DE80B400016369 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1E1424377A6986239E18D93C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2B4DC42BF791EAA32F87FA58</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AF8D1DB1417E8FF840903A69</string>
+				<string>1E1424377A6986239E18D93C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>548B7503A9FBF52F55D05EA5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B8A34722182979C953659B01</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5710126919E1C0B400B69295</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.pb-project</string>
+			<key>name</key>
+			<string>Alamofire.xcodeproj</string>
+			<key>path</key>
+			<string>Alamofire/Alamofire.xcodeproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5710126A19E1C0B400B69295</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5710126F19E1C0B400B69295</string>
+				<string>5710127119E1C0B400B69295</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5710126E19E1C0B400B69295</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5710126919E1C0B400B69295</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>F8111E3319A95C8B0040E7D1</string>
+			<key>remoteInfo</key>
+			<string>Alamofire</string>
+		</dict>
+		<key>5710126F19E1C0B400B69295</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Alamofire.framework</string>
+			<key>remoteRef</key>
+			<string>5710126E19E1C0B400B69295</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5710127019E1C0B400B69295</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>5710126919E1C0B400B69295</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>F8111E3E19A95C8B0040E7D1</string>
+			<key>remoteInfo</key>
+			<string>AlamofireTests</string>
+		</dict>
+		<key>5710127119E1C0B400B69295</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>AlamofireTests.xctest</string>
+			<key>remoteRef</key>
+			<string>5710127019E1C0B400B69295</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5710127219E1C0FF00B69295</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5710126F19E1C0B400B69295</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5710127319E1C10500B69295</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string></string>
+			<key>dstSubfolderSpec</key>
+			<string>10</string>
+			<key>files</key>
+			<array>
+				<string>5710127419E1C12000B69295</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>name</key>
+			<string>Copy Files (1 item)</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5710127419E1C12000B69295</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5710126F19E1C0B400B69295</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>CodeSignOnCopy</string>
+					<string>RemoveHeadersOnCopy</string>
+				</array>
+			</dict>
+		</dict>
+		<key>57B13CAA19DE80B400016369</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57B13CF219DEBBAC00016369</string>
+				<string>57B13CEE19DE8C8600016369</string>
+				<string>57B13CEC19DE8C7B00016369</string>
+				<string>57B13CB519DE80B400016369</string>
+				<string>57B13CCB19DE80B400016369</string>
+				<string>57B13CB419DE80B400016369</string>
+				<string>5710126919E1C0B400B69295</string>
+				<string>57B13CD819DE87A000016369</string>
+				<string>2B4DC42BF791EAA32F87FA58</string>
+				<string>548B7503A9FBF52F55D05EA5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CAB19DE80B400016369</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0600</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Reaktor</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>57B13CB219DE80B400016369</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0.1</string>
+					</dict>
+					<key>57B13CC719DE80B400016369</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0.1</string>
+						<key>TestTargetID</key>
+						<string>57B13CB219DE80B400016369</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>57B13CAE19DE80B400016369</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>57B13CAA19DE80B400016369</string>
+			<key>productRefGroup</key>
+			<string>57B13CB419DE80B400016369</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array>
+				<dict>
+					<key>ProductGroup</key>
+					<string>5710126A19E1C0B400B69295</string>
+					<key>ProjectRef</key>
+					<string>5710126919E1C0B400B69295</string>
+				</dict>
+				<dict>
+					<key>ProductGroup</key>
+					<string>57B13CD919DE87A000016369</string>
+					<key>ProjectRef</key>
+					<string>57B13CD819DE87A000016369</string>
+				</dict>
+			</array>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>57B13CB219DE80B400016369</string>
+				<string>57B13CC719DE80B400016369</string>
+			</array>
+		</dict>
+		<key>57B13CAE19DE80B400016369</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>57B13CD019DE80B400016369</string>
+				<string>57B13CD119DE80B400016369</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>57B13CAF19DE80B400016369</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>57CC8C0A19E47EA000484570</string>
+				<string>57B13CB919DE80B400016369</string>
+				<string>57CC8C1419E5878800484570</string>
+				<string>57CC8C0B19E47EA000484570</string>
+				<string>57CC8C0D19E47EB900484570</string>
+				<string>57CC8C1619E5985700484570</string>
+				<string>57CC8C0F19E47EC300484570</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>57B13CB019DE80B400016369</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5710127219E1C0FF00B69295</string>
+				<string>57B13CF319DEBBAC00016369</string>
+				<string>57B13CEF19DE8C8600016369</string>
+				<string>57B13CED19DE8C7B00016369</string>
+				<string>57B13CE619DE88FA00016369</string>
+				<string>CA49AE5D3810B3A7B51DB7C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>57B13CB119DE80B400016369</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>57CC8C1219E47ED400484570</string>
+				<string>57B13CC019DE80B400016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>57B13CB219DE80B400016369</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>57B13CD219DE80B400016369</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7678D386C7DC64898973B4C8</string>
+				<string>57B13CAF19DE80B400016369</string>
+				<string>57B13CB019DE80B400016369</string>
+				<string>57B13CB119DE80B400016369</string>
+				<string>57B13CEA19DE88FA00016369</string>
+				<string>5710127319E1C10500B69295</string>
+				<string>FBD9348BD84606793322C40D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>57B13CE919DE88FA00016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Taksi</string>
+			<key>productName</key>
+			<string>Taksi</string>
+			<key>productReference</key>
+			<string>57B13CB319DE80B400016369</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>57B13CB319DE80B400016369</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Taksi.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>57B13CB419DE80B400016369</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57B13CB319DE80B400016369</string>
+				<string>57B13CC819DE80B400016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CB519DE80B400016369</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57CC8BCC19E457C400484570</string>
+				<string>57CC8BCB19E457AE00484570</string>
+				<string>57CC8BCA19E457A500484570</string>
+				<string>57CC8BC619E4579700484570</string>
+				<string>57B13CB819DE80B400016369</string>
+				<string>57B13CBF19DE80B400016369</string>
+				<string>57B13CB619DE80B400016369</string>
+				<string>57CC8BFA19E471A900484570</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Taksi</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CB619DE80B400016369</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57CC8C1019E47ED400484570</string>
+				<string>57B13CB719DE80B400016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CB719DE80B400016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CB819DE80B400016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CB919DE80B400016369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57B13CB819DE80B400016369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57B13CBF19DE80B400016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CC019DE80B400016369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57B13CBF19DE80B400016369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57B13CC419DE80B400016369</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>57B13CCF19DE80B400016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>57B13CC519DE80B400016369</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>57B13CC619DE80B400016369</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>57B13CC719DE80B400016369</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>57B13CD519DE80B400016369</string>
+			<key>buildPhases</key>
+			<array>
+				<string>57B13CC419DE80B400016369</string>
+				<string>57B13CC519DE80B400016369</string>
+				<string>57B13CC619DE80B400016369</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>57B13CCA19DE80B400016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TaksiTests</string>
+			<key>productName</key>
+			<string>TaksiTests</string>
+			<key>productReference</key>
+			<string>57B13CC819DE80B400016369</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>57B13CC819DE80B400016369</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TaksiTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>57B13CC919DE80B400016369</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>57B13CAB19DE80B400016369</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>57B13CB219DE80B400016369</string>
+			<key>remoteInfo</key>
+			<string>Taksi</string>
+		</dict>
+		<key>57B13CCA19DE80B400016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>57B13CB219DE80B400016369</string>
+			<key>targetProxy</key>
+			<string>57B13CC919DE80B400016369</string>
+		</dict>
+		<key>57B13CCB19DE80B400016369</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57B13CCE19DE80B400016369</string>
+				<string>57B13CCC19DE80B400016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TaksiTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CCC19DE80B400016369</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57B13CCD19DE80B400016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CCD19DE80B400016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CCE19DE80B400016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TaksiTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CCF19DE80B400016369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57B13CCE19DE80B400016369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57B13CD019DE80B400016369</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>57B13CD119DE80B400016369</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>57B13CD219DE80B400016369</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>57B13CD319DE80B400016369</string>
+				<string>57B13CD419DE80B400016369</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>57B13CD319DE80B400016369</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AF8D1DB1417E8FF840903A69</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Taksi/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>Taksi/BridgingHeader.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>57B13CD419DE80B400016369</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1E1424377A6986239E18D93C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Taksi/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>Taksi/BridgingHeader.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>57B13CD519DE80B400016369</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>57B13CD619DE80B400016369</string>
+				<string>57B13CD719DE80B400016369</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>57B13CD619DE80B400016369</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>TaksiTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Taksi.app/Taksi</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>57B13CD719DE80B400016369</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>TaksiTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Taksi.app/Taksi</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>57B13CD819DE87A000016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.pb-project</string>
+			<key>name</key>
+			<string>Snappy.xcodeproj</string>
+			<key>path</key>
+			<string>Snappy/Snappy.xcodeproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CD919DE87A000016369</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57B13CDE19DE87A000016369</string>
+				<string>57B13CE019DE87A000016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57B13CDD19DE87A000016369</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>57B13CD819DE87A000016369</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>EEBCC9D819CC627D0083B827</string>
+			<key>remoteInfo</key>
+			<string>Snappy</string>
+		</dict>
+		<key>57B13CDE19DE87A000016369</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Snappy.framework</string>
+			<key>remoteRef</key>
+			<string>57B13CDD19DE87A000016369</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>57B13CDF19DE87A000016369</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>57B13CD819DE87A000016369</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>EEBCC9E219CC627E0083B827</string>
+			<key>remoteInfo</key>
+			<string>SnappyTests</string>
+		</dict>
+		<key>57B13CE019DE87A000016369</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>SnappyTests.xctest</string>
+			<key>remoteRef</key>
+			<string>57B13CDF19DE87A000016369</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>57B13CE619DE88FA00016369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57B13CDE19DE87A000016369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57B13CE719DE88FA00016369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57B13CDE19DE87A000016369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>CodeSignOnCopy</string>
+					<string>RemoveHeadersOnCopy</string>
+				</array>
+			</dict>
+		</dict>
+		<key>57B13CE819DE88FA00016369</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>57B13CD819DE87A000016369</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>EEBCC9D719CC627D0083B827</string>
+			<key>remoteInfo</key>
+			<string>Snappy</string>
+		</dict>
+		<key>57B13CE919DE88FA00016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Snappy</string>
+			<key>targetProxy</key>
+			<string>57B13CE819DE88FA00016369</string>
+		</dict>
+		<key>57B13CEA19DE88FA00016369</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string></string>
+			<key>dstSubfolderSpec</key>
+			<string>10</string>
+			<key>files</key>
+			<array>
+				<string>57B13CE719DE88FA00016369</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>name</key>
+			<string>Embed Frameworks</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>57B13CEC19DE8C7B00016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreLocation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreLocation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>57B13CED19DE8C7B00016369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57B13CEC19DE8C7B00016369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57B13CEE19DE8C8600016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MapKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MapKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>57B13CEF19DE8C8600016369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57B13CEE19DE8C8600016369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57B13CF219DEBBAC00016369</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>57B13CF319DEBBAC00016369</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57B13CF219DEBBAC00016369</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57CC8BC619E4579700484570</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ViewModel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8BCA19E457A500484570</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57CC8C0E19E47EC300484570</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Util</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8BCB19E457AE00484570</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57CC8C0C19E47EB900484570</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8BCC19E457C400484570</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57CC8C0819E47EA000484570</string>
+				<string>57CC8C0919E47EA000484570</string>
+				<string>57CC8C1319E5878800484570</string>
+				<string>57CC8C1519E5985700484570</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8BFA19E471A900484570</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BridgingHeader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C0819E47EA000484570</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ViewController.swift</string>
+			<key>path</key>
+			<string>View/ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C0919E47EA000484570</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>TrackerView.swift</string>
+			<key>path</key>
+			<string>View/TrackerView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C0A19E47EA000484570</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57CC8C0819E47EA000484570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57CC8C0B19E47EA000484570</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57CC8C0919E47EA000484570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57CC8C0C19E47EB900484570</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>TaxiService.swift</string>
+			<key>path</key>
+			<string>Model/TaxiService.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C0D19E47EB900484570</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57CC8C0C19E47EB900484570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57CC8C0E19E47EC300484570</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>AddressResolver.swift</string>
+			<key>path</key>
+			<string>Utils/AddressResolver.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C0F19E47EC300484570</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57CC8C0E19E47EC300484570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57CC8C1019E47ED400484570</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>57CC8C1119E47ED400484570</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C1119E47ED400484570</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xml</string>
+			<key>path</key>
+			<string>helsinki.gpx</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C1219E47ED400484570</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57CC8C1119E47ED400484570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57CC8C1319E5878800484570</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>HubView.swift</string>
+			<key>path</key>
+			<string>View/HubView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C1419E5878800484570</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57CC8C1319E5878800484570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57CC8C1519E5985700484570</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ViewHelpers.swift</string>
+			<key>path</key>
+			<string>View/ViewHelpers.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>57CC8C1619E5985700484570</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57CC8C1519E5985700484570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7678D386C7DC64898973B4C8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>AF8D1DB1417E8FF840903A69</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8A34722182979C953659B01</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CA49AE5D3810B3A7B51DB7C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B8A34722182979C953659B01</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FBD9348BD84606793322C40D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>57B13CAB19DE80B400016369</string>
+</dict>
+</plist>
